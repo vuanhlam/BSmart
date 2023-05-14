@@ -1,0 +1,48 @@
+.header {
+  .navigation {
+    background: var(--primary-color);
+  }
+
+  .nav-menu__list {
+    margin-left: 23rem;
+  }
+
+  .nav-item > img {
+    width: 38px;
+  }
+  .nav-item > span {
+    margin-left: -8px;
+  }
+
+  .search__course {
+    background: #28234c;
+    width: 30rem;
+    top: 8px;
+    caret-color: #ffff;
+    color: #ffff;
+  }
+
+  .search__course::placeholder {
+    color: #ffff;
+  }
+
+  .search__icon {
+    cursor: pointer;
+  }
+
+  .form-control:focus {
+    border: none;
+    border-color: #ffff;
+    box-shadow: none;
+  }
+
+  .avatar {
+    // 1rem = 16px
+    margin-left: 10rem;
+  }
+
+  /* Hide clear icon in search input */
+  input[type="search"]::-webkit-search-cancel-button {
+    display: none;
+  }
+}

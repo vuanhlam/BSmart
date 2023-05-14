@@ -1,16 +1,17 @@
 @import 'normalize.css';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+$enable-negative-margins: true;
 
 :root {
-
+    --primary-color: #0d0a37;
+    --secondary-color: #ff630e;
 }
 
 html {
-    font-size: 62.5%;
+    // font-size: 62.5%;
 }
 
 body{
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.6rem;
-    text-rendering: optimizeSpeed;
+    text-rendering: optimizeSpeed;  
 }
