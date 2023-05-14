@@ -4,16 +4,18 @@ import {
 } from "react-router-dom";
 import NewCourse from "./pages/Courses";
 import { Outlet } from "react-router-dom";
-import Header from "./components/Header";
+import HeaderTop from "./components/Header";
 import Footer from "./components/Footer";
 import HomePage from "./components/Home";
+import NavBar from "./components/NavBar";
 
 
 const Layout = () => {
   return (
     <div className="app-layout">
-      <Header />
-      <Outlet />
+      <HeaderTop />
+        <NavBar/>
+        <Outlet />
       <Footer />
     </div>
   )

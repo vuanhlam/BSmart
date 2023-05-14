@@ -8,7 +8,7 @@ import mailImage from '../../assets/images/icon-gmail.png'
 import phoneImage from '../../assets/images/icon-phone.png'
 import avatarImage from '../../assets/images/avatar-mentor-1.jpg'
 
-const Header = () => {
+const HeaderTop = () => {
 
     const [searchValue, setSearchValue] = useState('');
 
@@ -65,4 +65,4 @@ const Header = () => {
     )
 }
 
-export default Header;
+export default HeaderTop;

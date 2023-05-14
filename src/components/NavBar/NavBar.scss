@@ -1,0 +1,44 @@
+.navbar {
+}
+
+.brand-logo {
+  margin-left: 5rem;
+  width: 10rem;
+}
+
+.cart-image {
+  margin-right: 8.3rem;
+  width: 6rem;
+}
+
+.banner > h1 {
+  font-weight: 600;
+  color: var(--secondary-color);
+  font-size: 3rem;
+  margin: 0;
+}
+
+.blur {
+  background-color: var(--primary-color);
+}
+
+.banner {
+  height: 24rem;
+  object-fit: cover;
+}
+
+.banner::before {
+  background-color: var(--primary-color);
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  opacity: 0.8;
+}
+
+.badge {
+    left: 65px;
+    top: 10px;
+    background: var(--secondary-color);
+}
