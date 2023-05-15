@@ -6,7 +6,7 @@ import './NavBar.scss'
 
 const NavBar = () => {
     return (
-        <>
+        <div >
             <nav className="navbar navbar-expand-lg">
                 <div className="container-fluid">
                     <a className="navbar-brand" href="/">
@@ -16,7 +16,7 @@ const NavBar = () => {
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul className="navbar-nav mx-auto">
+                        <ul className="navbar-nav mx-auto ">
                             <li className="nav-item fw-bold">
                                 <a className="nav-link active" aria-current="page" href="#">Home</a>
                             </li>
@@ -52,11 +52,11 @@ const NavBar = () => {
                     </a>
                 </div>
             </nav>
-            <section className='banner  position-relative'>
-                <img src={banner} alt="banner" className='vw-100 banner' />
+            <section className='banner position-relative'>
+                <img src={banner} alt="banner" className='banner__image' />
                 <h1 className='position-absolute top-50 start-50 translate-middle'>Tạo khóa học</h1>
             </section>
-        </>
+        </div>
     )
 }
 
