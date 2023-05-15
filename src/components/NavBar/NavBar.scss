@@ -1,4 +1,8 @@
 .navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: #ffff;
 }
 
 .brand-logo {
@@ -25,7 +29,7 @@
 .banner__image {
   height: 24rem;
   object-fit: cover;
-  width: 100vw;
+  width: 100%;
 }
 
 .banner::before {

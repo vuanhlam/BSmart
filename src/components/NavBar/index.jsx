@@ -3,6 +3,7 @@ import brandLogo from '../../assets/images/icon-logo.png'
 import cartImage from '../../assets/images/icon-shopping-cart.jpg'
 import banner from '../../assets/images/banner-2.jpg'
 import './NavBar.scss'
+import { NavLink } from 'react-router-dom'
 
 const NavBar = () => {
     return (
@@ -18,13 +19,13 @@ const NavBar = () => {
                     <div className="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul className="navbar-nav mx-auto ">
                             <li className="nav-item fw-bold">
-                                <a className="nav-link active" aria-current="page" href="#">Home</a>
+                                <NavLink to='/' className="nav-link">Trang Chủ</NavLink>
                             </li>
                             <li className="nav-item fw-bold">
-                                <a className="nav-link" href="#">Về Chúng Tôi</a>
+                                <NavLink className="nav-link" to="/about-us">Về Chúng Tôi</NavLink>
                             </li>
                             <li className="nav-item fw-bold">
-                                <a className="nav-link" href="#">STEM</a>
+                                <NavLink className="nav-link" to="/stem">STEM</NavLink>
                             </li>
                             <li className="nav-item fw-bold">
                                 <a className="nav-link" href="#">Khóa Học</a>

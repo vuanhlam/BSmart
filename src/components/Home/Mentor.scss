@@ -1,0 +1,63 @@
+.mentor {
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 1px 1px 7px 0px rgba(168,155,168,1);
+  -moz-box-shadow: 1px 1px 7px 0px rgba(168,155,168,1);
+  box-shadow: 1px 1px 7px 0px rgba(168,155,168,1);
+
+  .mentor__bg {
+    width: 100%;
+  }
+
+  .mentor__name {
+    margin-top: 4rem;
+    font-size: 1.5rem;
+  }
+
+  .mentor__avatar {
+    width: 9.4rem;
+    border-radius: 0.25rem;
+    top: 9rem;
+  }
+
+  .mentor__social {
+    width: fit-content;
+    font-size: 1.2rem;
+  }
+
+  .box {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: var(--secondary-color);
+    border-radius: 0.25rem;
+  }
+
+  .faUser {
+    color: var(--secondary-color);
+    font-size: 2rem;
+  }
+
+  .mentor__withdraw-number,
+  .mentor__contact-address-icon,
+  .mentor__contact-gmail-icon,
+  .mentor__contact-phone-icon {
+    color: var(--secondary-color);
+  }
+
+  .mentor__tool-item {
+    background-color: var(--secondary-color);
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+    list-style-type: none;
+    height: 3.7rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mentor__tool-item:hover {
+    background-color: #fff;
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+  }
+}

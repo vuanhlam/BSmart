@@ -8,6 +8,8 @@ import HeaderTop from "./components/Header";
 import Footer from "./components/Footer";
 import HomePage from "./components/Home";
 import NavBar from "./components/NavBar";
+import AboutUs from "./pages/AboutUs";
+import Stem from "./pages/STEM";
 
 
 const Layout = () => {
@@ -32,6 +34,14 @@ function App() {
         {
           path: "new-course",
           element: <NewCourse />,
+        },
+        {
+          path: "about-us",
+          element: <AboutUs />,
+        },
+        {
+          path: "stem",
+          element: <Stem />,
         },
       ],
     },
