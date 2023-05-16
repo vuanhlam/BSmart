@@ -7,8 +7,8 @@ import { NavLink } from 'react-router-dom'
 
 const NavBar = () => {
     return (
-        <div >
-            <nav className="navbar navbar-expand-lg">
+        <>
+            <nav className="navbar navbar-expand-lg shadow">
                 <div className="container-fluid">
                     <a className="navbar-brand" href="/">
                         <img src={brandLogo} alt="brand-logo" className='brand-logo' />
@@ -57,7 +57,7 @@ const NavBar = () => {
                 <img src={banner} alt="banner" className='banner__image' />
                 <h1 className='position-absolute top-50 start-50 translate-middle'>Tạo khóa học</h1>
             </section>
-        </div>
+        </>
     )
 }
 

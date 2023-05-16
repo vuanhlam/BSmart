@@ -2,11 +2,12 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import NewCourse from "./pages/Courses";
+// import NewCourse from "./pages/Courses";
 import { Outlet } from "react-router-dom";
 import HeaderTop from "./components/Header";
 import Footer from "./components/Footer";
-import HomePage from "./components/Home";
+// import HomePage from "./components/Home";
+import NewCourse from "./components/Home";
 import NavBar from "./components/NavBar";
 import AboutUs from "./pages/AboutUs";
 import Stem from "./pages/STEM";
@@ -30,9 +31,9 @@ function App() {
       element: <Layout />,
       errorElement: <h1>404 Page not found</h1>,
       children: [
-        { index: true, element: <HomePage /> },
+        { index: true, element: <NewCourse /> },
         {
-          path: "new-course",
+          index: true,
           element: <NewCourse />,
         },
         {
