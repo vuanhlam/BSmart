@@ -15,3 +15,8 @@ body{
     font-family: 'Montserrat', sans-serif;
     text-rendering: optimizeSpeed;  
 }
+
+.form-control.is-invalid:focus,
+.form-control:focus {
+    box-shadow: none;
+}

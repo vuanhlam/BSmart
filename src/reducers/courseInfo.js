@@ -6,9 +6,9 @@ export const INITIALSTATE = {
     major: '',
     learnType: '',
     linkMeet: '',
-    minStudent: 0,
-    maxStudent: 0,
-    tags: [],
+    minStudent: '',
+    maxStudent: '',
+    tags: '',
     courseDesc: ''
 }
 
@@ -18,7 +18,15 @@ export const courseInfoReducer = (state, action) => {
             return {
                 ...state, [action.payload.name]: action.payload.value
             }
+        case 'CHANGE_INPUT_PRICE':
+            return {
+                ...state, [action.payload.name]: action.payload.value
+            }
         case 'CHANGE_FILE':
+            return {
+                ...state, [action.payload.name]: action.payload.value
+            }
+        case 'CREATE_TAG': 
             return {
                 ...state, [action.payload.name]: action.payload.value
             }
