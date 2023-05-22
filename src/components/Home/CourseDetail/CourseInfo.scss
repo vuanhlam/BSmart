@@ -1,0 +1,20 @@
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+  background: var(--secondary-color);
+  color: #fff; 
+}
+
+.accordion-button:not(.collapsed)::after {  
+  background-image: var(--bs-accordion-btn-active-icon);
+  transform: var(--bs-accordion-btn-icon-transform);
+  color: #fff;
+} 
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .btn-delete-image {
+    
+  }
+}

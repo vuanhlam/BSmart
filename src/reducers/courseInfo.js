@@ -11,7 +11,7 @@ export const INITIALSTATE = {
     tags: '',
     courseDesc: ''
 }
-
+ 
 export const courseInfoReducer = (state, action) => {
     switch(action.type) {
         case 'CHANGE_INPUT':

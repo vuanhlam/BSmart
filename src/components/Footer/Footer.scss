@@ -1,82 +1,89 @@
 .footer {
-    background: var(--primary-color);
+  background: var(--primary-color);
 
-    .footer__address {
-        padding-top: 5rem;
-        padding-bottom: 2rem;
-    }
+  .footer__address {
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    margin: 0 auto;
+  }
 
-    .footer__address-city {
-        color: #d5d5d5;
-        font-size: 0.9rem;
-    }
+  .footer__address-city {
+    color: #d5d5d5;
+    font-size: 0.9rem;
+    top: -21px;
+  }
 
-    .footer__address-list {
-        padding-left: 0;
-    }
 
-    .address-item {
-        list-style-type: none;
-        font-size: 0.85rem;
-    }
+  .address-item-wrapper {
+    width: fit-content;
+    margin: 0 auto;
+  }
 
-    .address-item__office {
-        font-size: 1rem;
-    }
+  .address-item {
+    list-style-type: none;
+    font-size: 0.85rem;
+    margin-bottom: 3rem;
+  }
+
+  .address-item__office {
+    font-size: 1rem;
+  }
 }
 
 .footer__info {
-    padding-top: 2rem;
+  padding-top: 2rem;
 
-    .menu,
-    .footer__info--list {
-        padding-left: 0;
-    }
+  .menu,
+  .footer__info--list {
+    padding-left: 0;
+    margin-bottom: 0;
+  }
 
-    .menu__item,
-    .info-item {
-        list-style-type: none;
-    }
-    
-    .info-item {
-        width: 16rem;
-    }
+  .menu__item,
+  .info-item {
+    list-style-type: none;
+  }
 
-    .info-item__header {
-        font-size: 0.9rem;
-    }
+  .info-item {
+    // width: 16rem;
+    margin-bottom: 3rem;
+  }
 
-    .info-item__logo {
-        width: 8rem;
-    }
+  .info-item__header {
+    font-size: 0.9rem;
+  }
 
-    .ingo-item__follow {
-        font-size: .8rem;
-    }
+  .info-item__logo {
+    width: 8rem;
+  }
 
-    .info-item__about {
-        text-align: justify;
-        font-size: 0.8rem;
-    }
+  .ingo-item__follow {
+    font-size: 0.8rem;
+  }
 
-    .menu {
-        font-size: .8rem;
-    }
+  .info-item__about {
+    text-align: justify;
+    font-size: 0.8rem;
+  }
 
-    .menu__item {
-        line-height: 1.6rem;
-        font-size: .7rem;
-    }
+  .menu {
+    font-size: 0.8rem;
+  }
 
-    .menu__item-icon {
-        width: 2.3rem;
-        height: 2.2rem;
-        object-fit: cover;
-    }
+  .menu__item {
+    line-height: 1.6rem;
+    font-size: 0.7rem;
+  }
 
-    .menu__item-phoneIcon,
-    .menu__item-gmailIcon {
-        width: 2.1rem;
-    }
+  .menu__item-icon {
+    width: 2.3rem;
+    height: 2.2rem;
+    object-fit: cover;
+  }
+
+  .menu__item-phoneIcon,
+  .menu__item-gmailIcon {
+    width: 2.1rem;
+  }
 
 }

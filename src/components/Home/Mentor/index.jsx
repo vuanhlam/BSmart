@@ -12,8 +12,8 @@ const MentorInfo = () => {
   return (
     <section className="mentor pt-4 px-4 shadow-sm bg-body-tertiary">
       <figure className='position-relative'>
-        <img src={backgroundImage} alt="background" className='mentor__bg' />
-        <img src={avatar} alt="avatar" className='position-absolute start-50 translate-middle mentor__avatar' />
+        <img src={backgroundImage} alt="background" className='mentor__bg    d-md-block d-lg-block'  />
+        <img src={avatar} alt="avatar" className='position-absolute start-50 translate-middle mentor__avatar pb-4' />
       </figure>
       <h2 className="mentor__name text-center fw-bold">Mentor Cường</h2>
       <span className='text-center d-block'>Mentor</span>

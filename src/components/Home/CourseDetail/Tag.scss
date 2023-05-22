@@ -48,9 +48,3 @@
 		cursor: pointer;
 	}
 }
-
-@media screen and (max-width: 567px) {
-	.tags-input {
-		width: calc(100vw - 32px);
-	}
-}

@@ -58,3 +58,37 @@
     color: var(--secondary-color);
   }
 }
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .mentor__avatar {
+    top: 7rem !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .mentor__avatar {
+    width: 7.4rem !important;
+    top: 6rem !important;
+  }
+}
+
+
+@media (min-width: 992px){
+  .mentor__avatar {
+    width: 7.6rem!important;
+    top: 6.2rem !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .mentor__avatar {
+    width: 12.6rem !important;
+    top: 13.1rem !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 815px) {
+  .mentor .mentor__tool-item {
+    font-size: 0.8rem!important;
+  }
+}

@@ -6,8 +6,9 @@ import { useEffect, useReducer, useState } from 'react';
 import { courseInfoReducer, INITIALSTATE } from '../../../reducers/courseInfo';
 import { useRef } from 'react';
 import './Tag.scss'
+import './CourseInfo.scss'
 
-const CourseInfo = () => {
+const CourseInfo = () => { 
     const [state, dispatch] = useReducer(courseInfoReducer, INITIALSTATE);
     const [previewImage, setPreviewImage] = useState('');
     const [errorMes, setErrorMes] = useState({
@@ -21,7 +22,7 @@ const CourseInfo = () => {
     });
     const inputRef = useRef(null);
     const minRef = useRef();
-    const maxRef = useRef();
+    const maxRef = useRef(); 
     const [tags, setTags] = useState([]);
     const ValidFileExtensions = [".jpg", ".png"];
     const fileInputRef = useRef(null);
@@ -115,19 +116,24 @@ const CourseInfo = () => {
                 return {
                     ...prev, student: {...prev.student, min: ''}
                 }
-            })
+            }) 
+            // setErrorMes({
+            //     ...errorMes, student: {...errorMes.student, min: ''}
+            // })
             setErrorMes((prev) => {
                 return {
                     ...prev, student: {...prev.student, max: ''}
                 }
             })
+            // setErrorMes({
+            //     ...errorMes, student: {...errorMes.student, max: ''}
+            // })
         }
 
     }
 
     const removeTags = indexToRemove => {
         setTags([...tags.filter((_, index) => index !== indexToRemove)]);
-
     };
 
     const addTags = e => {
@@ -194,7 +200,7 @@ const CourseInfo = () => {
             }
 
             if (!isValid) {
-                setErrorMes({ ...errorMes, file: `Sorry, ${fileName} is invalid. Allowed extensions are: ${ValidFileExtensions.join(", ")}` })
+                setErrorMes({ ...errorMes, file: `chỉ được phép upload file định dạng: ${ValidFileExtensions.join(", ")}` })
                 fileInput.value = '';
             } else {
                 setErrorMes({ ...errorMes, file: `` })
@@ -210,7 +216,6 @@ const CourseInfo = () => {
         }
     };
 
-    console.log(errorMes);
     return (
         <Accordion defaultActiveKey="0">
             <Accordion.Item eventKey="0">
@@ -299,11 +304,11 @@ const CourseInfo = () => {
                     </div>
                     {/* image */}
                     <div className="rounded text-center mb-3" style={{ minHeight: '10rem', border: '1px solid #ddd', }}>
-                        <img src={previewImage ? previewImage : cloud} alt="cloud" className='mt-3' style={{ width: '20rem', height: '100%' }} />
+                        <img src={previewImage ? previewImage : cloud} alt="cloud" className='mt-3' style={{ width: '20rem', height: '20rem' }} />
                         <hr />
-                        <div className="mb-3 text-center d-flex align-items-center justify-content-evenly">
-                            <span>Hình ảnh:</span>
-                            <div>
+                        <div className="row mb-3 text-center align-items-center">
+                            <span style={{display: 'block', width: '130px'}} className="col-12 col-lg-4 ms-1">Hình ảnh:</span>
+                            <div style={{width: 'fit-content'}} className="col-12 col-lg-4 ms-3 me-3 my-2">
                                 <input
                                     accept=".png,.jpeg"
                                     className={`form-control ${errorMes.file ? 'is-invalid' : ''}`}
@@ -317,7 +322,7 @@ const CourseInfo = () => {
                                     {errorMes.file}
                                 </div>
                             </div>
-                            <button className='btn text-white fw-bold' style={{ background: 'var(--secondary-color)', width: '8rem' }}>
+                            <button className='btn col-12 col-lg-4 ms-4 btn-delete-image mt-2' style={{ background: 'var(--secondary-color)', width: '8rem' }}>
                                 <span
                                     style={{ fontSize: '.7rem' }}
                                     onClick={() => {
@@ -325,6 +330,7 @@ const CourseInfo = () => {
                                         dispatch({ type: 'CHANGE_FILE', payload: { name: "image", value: null } })
                                         fileInputRef.current.value = null;
                                     }}
+                                    className='text-white fw-bold'
                                 >
                                     XÓA ẢNH
                                 </span>
@@ -368,8 +374,8 @@ const CourseInfo = () => {
                         <label className="form-label">Số lượng học viên: </label>
                         <div className="student-quantity d-flex column-gap-4">
                             <div className="min">
-                                <div className="d-flex">
-                                    <label className="form-label me-2">min: </label>
+                                <div className="d-flex align-items-center">
+                                    <label className=" me-2">min: </label>
                                     <input
                                         // min={1}
                                         // max={15}
@@ -387,8 +393,8 @@ const CourseInfo = () => {
                                 </span>
                             </div>
                             <div className="max">
-                                <div className="d-flex">
-                                    <label className="form-label me-2">max: </label>
+                                <div className="d-flex align-items-center">
+                                    <label className=" me-2">max: </label>
                                     <input
                                         // min={1}
                                         // max={15}

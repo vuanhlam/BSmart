@@ -18,14 +18,14 @@ const HeaderTop = () => {
 
     return (
         <header className='header'>
-            <nav className="navbar navbar-expand-lg navigation">
+            <nav className="navbar navbar-expand-lg navigation d-none d-sm-none d-lg-block">
                 <div className="container-fluid">
                     <button 
                         className="navbar-toggler" 
                         type="button" data-bs-toggle="collapse" 
                         data-bs-target="#navbarScroll" 
                         aria-controls="navbarScroll" 
-                        aria-expanded="false" 
+                        aria-expanded="true"  
                         aria-label="Toggle navigation"
                     >
                         <span className="navbar-toggler-icon"></span>
@@ -41,7 +41,7 @@ const HeaderTop = () => {
                                 <span className="nav-link active text-white" aria-current="page" href="#">02899997939</span>
                             </li>
                         </ul>
-                        <label className="d-flex text-white position-relative" role="search">
+                        <label className="d-flex text-white position-relative search" role="search">
                             <input 
                                 className="form-control me-2 search__course border-0" type="search" 
                                 placeholder="Tìm kiếm khóa học" 
@@ -56,10 +56,10 @@ const HeaderTop = () => {
                             />
                         </label>
                         <div className="avatar" type="submit">
-                            <img src={avatarImage} alt="avatar" className='rounded-circle w-25 ' />
+                            <img src={avatarImage} alt="avatar" className='rounded-circle header-avatar' />
                         </div>
                     </div>
-                </div>
+                </div> 
             </nav>
         </header>
     )
